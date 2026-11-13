@@ -1,0 +1,219 @@
+[
+  {
+    "scenario": "a-missing",
+    "damage": "missing",
+    "sample_path": "/tmp/av-diag/runs/a-missing/source.wav",
+    "original_size_bytes": 1004,
+    "original_sha256": "53eb332eae4501e84fe4fb7c67954bed9d1795410b3abd7ae883d7c90e587b0a",
+    "asset_id": "asset_983d0d15b8b94ef38bb202b539d0ce8f",
+    "rendition_id": "rendition_bff6ecb8e1ad429d9beb5b3621185246",
+    "output_asset_id": "asset_f5f87d36afec44afac6d08a09945a39c",
+    "source_blob": "/tmp/av-diag/runs/a-missing/data/content/53/eb/53eb332eae4501e84fe4fb7c67954bed9d1795410b3abd7ae883d7c90e587b0a",
+    "baseline_http_status": 201,
+    "baseline_audit_status": "verified",
+    "post_damage_size_bytes": 0,
+    "header_recognizable_after_damage": true,
+    "damaged_http_status": 409,
+    "damaged_response": {
+      "error": {
+        "code": "INTEGRITY_MISMATCH",
+        "details": {
+          "audit": {
+            "created_at": "2026-11-13T01:09:54.255939+00:00",
+            "expected_descriptor": {
+              "container": "wav",
+              "kind": "audio",
+              "mime_type": "audio/wav",
+              "properties": {
+                "channels": 1,
+                "codec": "pcm_s16le",
+                "duration_seconds": 0.06,
+                "frame_count": 480,
+                "sample_rate": 8000
+              }
+            },
+            "expected_digest": "6d3092e793b8220cbf4e703ef9c9e25958aa62f86976936fc9ecdbafdd458b1c",
+            "id": "audit_bd603b25dd4a4c33aa19d40c5d2a58d4",
+            "reason": "source_or_output_unavailable",
+            "rendition_id": "rendition_bff6ecb8e1ad429d9beb5b3621185246",
+            "reproduced_descriptor": null,
+            "reproduced_digest": null,
+            "status": "mismatch",
+            "updated_at": "2026-11-13T01:09:54.261193+00:00"
+          },
+          "reason": "source_or_output_unavailable"
+        },
+        "message": "The recorded rendition did not reproduce exactly."
+      }
+    },
+    "restart_health_status": 200,
+    "persisted_audit_count": 2,
+    "persisted_audits": [
+      {
+        "id": "audit_bd603b25dd4a4c33aa19d40c5d2a58d4",
+        "status": "mismatch",
+        "reason": "source_or_output_unavailable",
+        "expected_digest_present": true,
+        "reproduced_digest": null,
+        "created_at": "2026-11-13T01:09:54.255939+00:00",
+        "updated_at": "2026-11-13T01:09:54.261193+00:00"
+      },
+      {
+        "id": "audit_e19e89ff159546e1a5108f3d69b3cb92",
+        "status": "verified",
+        "reason": null,
+        "expected_digest_present": true,
+        "reproduced_digest": "6d3092e793b8220cbf4e703ef9c9e25958aa62f86976936fc9ecdbafdd458b1c",
+        "created_at": "2026-11-13T01:09:54.247749+00:00",
+        "updated_at": "2026-11-13T01:09:54.252063+00:00"
+      }
+    ],
+    "rendition_status_after_restart": "completed",
+    "source_blob_still_present_after_restart": false
+  },
+  {
+    "scenario": "b-trunc-odd",
+    "damage": "truncate_odd",
+    "sample_path": "/tmp/av-diag/runs/b-trunc-odd/source.wav",
+    "original_size_bytes": 1004,
+    "original_sha256": "53eb332eae4501e84fe4fb7c67954bed9d1795410b3abd7ae883d7c90e587b0a",
+    "asset_id": "asset_b6a6ea0fe934467e82bc7e95fdd608d6",
+    "rendition_id": "rendition_9dd8aa5c9c5740a79de0d00584ad3166",
+    "output_asset_id": "asset_e71c58ca406f42a7bb00204c180cee03",
+    "source_blob": "/tmp/av-diag/runs/b-trunc-odd/data/content/53/eb/53eb332eae4501e84fe4fb7c67954bed9d1795410b3abd7ae883d7c90e587b0a",
+    "baseline_http_status": 201,
+    "baseline_audit_status": "verified",
+    "post_damage_size_bytes": 1003,
+    "header_recognizable_after_damage": true,
+    "damaged_http_status": 500,
+    "damaged_response": {
+      "error": {
+        "code": "INTERNAL_ERROR",
+        "message": "An unexpected internal error occurred."
+      }
+    },
+    "repeat_damaged_http_status": 500,
+    "repeat_damaged_response": {
+      "error": {
+        "code": "INTERNAL_ERROR",
+        "message": "An unexpected internal error occurred."
+      }
+    },
+    "restart_health_status": 200,
+    "persisted_audit_count": 3,
+    "persisted_audits": [
+      {
+        "id": "audit_43eecc5129ab4b4aa6f067bb23322f69",
+        "status": "pending",
+        "reason": null,
+        "expected_digest_present": false,
+        "reproduced_digest": null,
+        "created_at": "2026-11-13T01:09:54.508187+00:00",
+        "updated_at": "2026-11-13T01:09:54.508187+00:00"
+      },
+      {
+        "id": "audit_d66d3ae577254a499ed770fce71fe63c",
+        "status": "pending",
+        "reason": null,
+        "expected_digest_present": false,
+        "reproduced_digest": null,
+        "created_at": "2026-11-13T01:09:54.513558+00:00",
+        "updated_at": "2026-11-13T01:09:54.513558+00:00"
+      },
+      {
+        "id": "audit_e16ae5212c7b4986bbd637f4a03db343",
+        "status": "verified",
+        "reason": null,
+        "expected_digest_present": true,
+        "reproduced_digest": "6d3092e793b8220cbf4e703ef9c9e25958aa62f86976936fc9ecdbafdd458b1c",
+        "created_at": "2026-11-13T01:09:54.499806+00:00",
+        "updated_at": "2026-11-13T01:09:54.503790+00:00"
+      }
+    ],
+    "rendition_status_after_restart": "completed",
+    "source_blob_still_present_after_restart": true
+  },
+  {
+    "scenario": "c-trunc-aligned",
+    "damage": "truncate_aligned",
+    "sample_path": "/tmp/av-diag/runs/c-trunc-aligned/source.wav",
+    "original_size_bytes": 1004,
+    "original_sha256": "53eb332eae4501e84fe4fb7c67954bed9d1795410b3abd7ae883d7c90e587b0a",
+    "asset_id": "asset_3a8c7eca767849e28de52821320636f1",
+    "rendition_id": "rendition_cd4758d287f6425bbdb250957b8bd255",
+    "output_asset_id": "asset_3b5fb4b420bd458d9e21f6180ce3637b",
+    "source_blob": "/tmp/av-diag/runs/c-trunc-aligned/data/content/53/eb/53eb332eae4501e84fe4fb7c67954bed9d1795410b3abd7ae883d7c90e587b0a",
+    "baseline_http_status": 201,
+    "baseline_audit_status": "verified",
+    "post_damage_size_bytes": 1002,
+    "header_recognizable_after_damage": true,
+    "damaged_http_status": 409,
+    "damaged_response": {
+      "error": {
+        "code": "INTEGRITY_MISMATCH",
+        "details": {
+          "audit": {
+            "created_at": "2026-11-13T01:09:54.755021+00:00",
+            "expected_descriptor": {
+              "container": "wav",
+              "kind": "audio",
+              "mime_type": "audio/wav",
+              "properties": {
+                "channels": 1,
+                "codec": "pcm_s16le",
+                "duration_seconds": 0.06,
+                "frame_count": 480,
+                "sample_rate": 8000
+              }
+            },
+            "expected_digest": "6d3092e793b8220cbf4e703ef9c9e25958aa62f86976936fc9ecdbafdd458b1c",
+            "id": "audit_b03fd4e55e684b37979322f02dba1f14",
+            "reason": "reproduced_bytes_differ",
+            "rendition_id": "rendition_cd4758d287f6425bbdb250957b8bd255",
+            "reproduced_descriptor": {
+              "container": "wav",
+              "kind": "audio",
+              "mime_type": "audio/wav",
+              "properties": {
+                "channels": 1,
+                "codec": "pcm_s16le",
+                "duration_seconds": 0.059875,
+                "frame_count": 479,
+                "sample_rate": 8000
+              }
+            },
+            "reproduced_digest": "1f6c3cc0b5325c3e643bc24163362f5f3175f4e6b744e3289f8ebcc701baf42a",
+            "status": "mismatch",
+            "updated_at": "2026-11-13T01:09:54.760295+00:00"
+          },
+          "reason": "reproduced_bytes_differ"
+        },
+        "message": "The recorded rendition did not reproduce exactly."
+      }
+    },
+    "restart_health_status": 200,
+    "persisted_audit_count": 2,
+    "persisted_audits": [
+      {
+        "id": "audit_afa4579a1ec94729943f496814e3c140",
+        "status": "verified",
+        "reason": null,
+        "expected_digest_present": true,
+        "reproduced_digest": "6d3092e793b8220cbf4e703ef9c9e25958aa62f86976936fc9ecdbafdd458b1c",
+        "created_at": "2026-11-13T01:09:54.747349+00:00",
+        "updated_at": "2026-11-13T01:09:54.751264+00:00"
+      },
+      {
+        "id": "audit_b03fd4e55e684b37979322f02dba1f14",
+        "status": "mismatch",
+        "reason": "reproduced_bytes_differ",
+        "expected_digest_present": true,
+        "reproduced_digest": "1f6c3cc0b5325c3e643bc24163362f5f3175f4e6b744e3289f8ebcc701baf42a",
+        "created_at": "2026-11-13T01:09:54.755021+00:00",
+        "updated_at": "2026-11-13T01:09:54.760295+00:00"
+      }
+    ],
+    "rendition_status_after_restart": "completed",
+    "source_blob_still_present_after_restart": true
+  }
+]

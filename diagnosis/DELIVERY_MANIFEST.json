@@ -1,0 +1,120 @@
+{
+  "note": "Host export of model-created files from /tmp/av-diag and verbatim final answer; no production source changes. MODEL_FINAL contains known interpretation errors; independent assessment is stored outside this product snapshot.",
+  "files": [
+    {
+      "path": "MODEL_FINAL.md",
+      "sha256": "a7a3b179414903f5e1f4112039e903401d411452c684452eb152ba7443e8d93f",
+      "bytes": 6613
+    },
+    {
+      "path": "model-artifacts/runs/a-missing/data/content/6d/30/6d3092e793b8220cbf4e703ef9c9e25958aa62f86976936fc9ecdbafdd458b1c",
+      "sha256": "6d3092e793b8220cbf4e703ef9c9e25958aa62f86976936fc9ecdbafdd458b1c",
+      "bytes": 1004
+    },
+    {
+      "path": "model-artifacts/runs/a-missing/data/state.json",
+      "sha256": "9cbacfe54fb7247bcff749c36a05d253b8c6daa854e1539a08703bf355bcd8eb",
+      "bytes": 5328
+    },
+    {
+      "path": "model-artifacts/runs/a-missing/server-first.log",
+      "sha256": "c34e73a906109a57f5af4f28072e3d431996c3701b6e3fa129ee10fd3be89a20",
+      "bytes": 108
+    },
+    {
+      "path": "model-artifacts/runs/a-missing/server-restarted.log",
+      "sha256": "af938c07f6da20673bbc9e32da117a86b9db562ec6881b1919ac1bda65dd66e8",
+      "bytes": 108
+    },
+    {
+      "path": "model-artifacts/runs/a-missing/source.wav",
+      "sha256": "53eb332eae4501e84fe4fb7c67954bed9d1795410b3abd7ae883d7c90e587b0a",
+      "bytes": 1004
+    },
+    {
+      "path": "model-artifacts/runs/b-trunc-odd/data/content/53/eb/53eb332eae4501e84fe4fb7c67954bed9d1795410b3abd7ae883d7c90e587b0a",
+      "sha256": "7bd47168c4d87f151bd6ff56bacb4379d263ca1522117947e32b05f87d41d629",
+      "bytes": 1003
+    },
+    {
+      "path": "model-artifacts/runs/b-trunc-odd/data/content/6d/30/6d3092e793b8220cbf4e703ef9c9e25958aa62f86976936fc9ecdbafdd458b1c",
+      "sha256": "6d3092e793b8220cbf4e703ef9c9e25958aa62f86976936fc9ecdbafdd458b1c",
+      "bytes": 1004
+    },
+    {
+      "path": "model-artifacts/runs/b-trunc-odd/data/state.json",
+      "sha256": "fbe8d6a1a95e798a759ee90631e8972e8f2b289b42fbb30151cab39440ee2341",
+      "bytes": 5906
+    },
+    {
+      "path": "model-artifacts/runs/b-trunc-odd/server-first.log",
+      "sha256": "6e6ffb2312164578ca31ee63af70f6157dc076a7e9c4b761b0132d87adf46874",
+      "bytes": 2414
+    },
+    {
+      "path": "model-artifacts/runs/b-trunc-odd/server-restarted.log",
+      "sha256": "f966cb35ac6200cc2852fe3b4eaf28b49413863ef2420061376e96988e83386f",
+      "bytes": 110
+    },
+    {
+      "path": "model-artifacts/runs/b-trunc-odd/server-third.log",
+      "sha256": "e0907c52234800d3aac6c938c4896781f15e8dc6252dfef72cf143492254d83c",
+      "bytes": 1262
+    },
+    {
+      "path": "model-artifacts/runs/b-trunc-odd/source.wav",
+      "sha256": "53eb332eae4501e84fe4fb7c67954bed9d1795410b3abd7ae883d7c90e587b0a",
+      "bytes": 1004
+    },
+    {
+      "path": "model-artifacts/runs/c-trunc-aligned/data/content/53/eb/53eb332eae4501e84fe4fb7c67954bed9d1795410b3abd7ae883d7c90e587b0a",
+      "sha256": "aaaf4da1d62bc70a6533d16cb1d30cbd6d8063eb66ec53bae3af9a3a8a480695",
+      "bytes": 1002
+    },
+    {
+      "path": "model-artifacts/runs/c-trunc-aligned/data/content/6d/30/6d3092e793b8220cbf4e703ef9c9e25958aa62f86976936fc9ecdbafdd458b1c",
+      "sha256": "6d3092e793b8220cbf4e703ef9c9e25958aa62f86976936fc9ecdbafdd458b1c",
+      "bytes": 1004
+    },
+    {
+      "path": "model-artifacts/runs/c-trunc-aligned/data/state.json",
+      "sha256": "1a60296cb02a5e3dacf9af642be3b1f8e6b549b7edfc43bee73c392d5324040a",
+      "bytes": 5668
+    },
+    {
+      "path": "model-artifacts/runs/c-trunc-aligned/server-first.log",
+      "sha256": "daa3fad0053b9df5840be26491cbaaa6dc085add2226023415b8bf099637a4c1",
+      "bytes": 114
+    },
+    {
+      "path": "model-artifacts/runs/c-trunc-aligned/server-restarted.log",
+      "sha256": "d91c03e96d9ab1ced2eff84f4f94816f979af3a07709392b1f448114c5f440e2",
+      "bytes": 114
+    },
+    {
+      "path": "model-artifacts/runs/c-trunc-aligned/source.wav",
+      "sha256": "53eb332eae4501e84fe4fb7c67954bed9d1795410b3abd7ae883d7c90e587b0a",
+      "bytes": 1004
+    },
+    {
+      "path": "model-artifacts/runs/diagnosis-report.json",
+      "sha256": "5fbdfec1e7dd6fea0b2deaa2f32f9a887cedce904aabdd5a3deece6338ba2aac",
+      "bytes": 8582
+    },
+    {
+      "path": "model-artifacts/runs/run.stdout",
+      "sha256": "789d536b2ef3683d8ec18223781d629b7c3db98142017499efb38317d3ab4157",
+      "bytes": 8642
+    },
+    {
+      "path": "model-artifacts/scripts/launch_server.py",
+      "sha256": "64bd37e53e4e4bda6b4f2459cea94f85a904ddd75094dd891ec5b80545789892",
+      "bytes": 410
+    },
+    {
+      "path": "model-artifacts/scripts/reproduce_diagnosis.py",
+      "sha256": "16c574fc9ba3195296a99b07c3b8db7ef699200518beafc39fbc325e7461f092",
+      "bytes": 11171
+    }
+  ]
+}

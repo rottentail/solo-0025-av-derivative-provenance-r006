@@ -1,0 +1,176 @@
+{
+  "assets": {
+    "asset_3a8c7eca767849e28de52821320636f1": {
+      "content_key": "53/eb/53eb332eae4501e84fe4fb7c67954bed9d1795410b3abd7ae883d7c90e587b0a",
+      "created_at": "2026-11-13T01:09:54.733336+00:00",
+      "descriptor": {
+        "container": "wav",
+        "kind": "audio",
+        "mime_type": "audio/wav",
+        "properties": {
+          "channels": 1,
+          "codec": "pcm_s16le",
+          "duration_seconds": 0.06,
+          "frame_count": 480,
+          "sample_rate": 8000
+        }
+      },
+      "filename": "source.wav",
+      "id": "asset_3a8c7eca767849e28de52821320636f1",
+      "kind": "audio",
+      "sha256": "53eb332eae4501e84fe4fb7c67954bed9d1795410b3abd7ae883d7c90e587b0a",
+      "size_bytes": 1004
+    },
+    "asset_3b5fb4b420bd458d9e21f6180ce3637b": {
+      "content_key": "6d/30/6d3092e793b8220cbf4e703ef9c9e25958aa62f86976936fc9ecdbafdd458b1c",
+      "created_at": "2026-11-13T01:09:54.743360+00:00",
+      "descriptor": {
+        "container": "wav",
+        "kind": "audio",
+        "mime_type": "audio/wav",
+        "properties": {
+          "channels": 1,
+          "codec": "pcm_s16le",
+          "duration_seconds": 0.06,
+          "frame_count": 480,
+          "sample_rate": 8000
+        }
+      },
+      "filename": "derived.wav",
+      "id": "asset_3b5fb4b420bd458d9e21f6180ce3637b",
+      "kind": "audio",
+      "sha256": "6d3092e793b8220cbf4e703ef9c9e25958aa62f86976936fc9ecdbafdd458b1c",
+      "size_bytes": 1004
+    }
+  },
+  "integrity_checks": {
+    "audit_afa4579a1ec94729943f496814e3c140": {
+      "created_at": "2026-11-13T01:09:54.747349+00:00",
+      "expected_descriptor": {
+        "container": "wav",
+        "kind": "audio",
+        "mime_type": "audio/wav",
+        "properties": {
+          "channels": 1,
+          "codec": "pcm_s16le",
+          "duration_seconds": 0.06,
+          "frame_count": 480,
+          "sample_rate": 8000
+        }
+      },
+      "expected_digest": "6d3092e793b8220cbf4e703ef9c9e25958aa62f86976936fc9ecdbafdd458b1c",
+      "id": "audit_afa4579a1ec94729943f496814e3c140",
+      "reason": null,
+      "rendition_id": "rendition_cd4758d287f6425bbdb250957b8bd255",
+      "reproduced_descriptor": {
+        "container": "wav",
+        "kind": "audio",
+        "mime_type": "audio/wav",
+        "properties": {
+          "channels": 1,
+          "codec": "pcm_s16le",
+          "duration_seconds": 0.06,
+          "frame_count": 480,
+          "sample_rate": 8000
+        }
+      },
+      "reproduced_digest": "6d3092e793b8220cbf4e703ef9c9e25958aa62f86976936fc9ecdbafdd458b1c",
+      "status": "verified",
+      "updated_at": "2026-11-13T01:09:54.751264+00:00"
+    },
+    "audit_b03fd4e55e684b37979322f02dba1f14": {
+      "created_at": "2026-11-13T01:09:54.755021+00:00",
+      "expected_descriptor": {
+        "container": "wav",
+        "kind": "audio",
+        "mime_type": "audio/wav",
+        "properties": {
+          "channels": 1,
+          "codec": "pcm_s16le",
+          "duration_seconds": 0.06,
+          "frame_count": 480,
+          "sample_rate": 8000
+        }
+      },
+      "expected_digest": "6d3092e793b8220cbf4e703ef9c9e25958aa62f86976936fc9ecdbafdd458b1c",
+      "id": "audit_b03fd4e55e684b37979322f02dba1f14",
+      "reason": "reproduced_bytes_differ",
+      "rendition_id": "rendition_cd4758d287f6425bbdb250957b8bd255",
+      "reproduced_descriptor": {
+        "container": "wav",
+        "kind": "audio",
+        "mime_type": "audio/wav",
+        "properties": {
+          "channels": 1,
+          "codec": "pcm_s16le",
+          "duration_seconds": 0.059875,
+          "frame_count": 479,
+          "sample_rate": 8000
+        }
+      },
+      "reproduced_digest": "1f6c3cc0b5325c3e643bc24163362f5f3175f4e6b744e3289f8ebcc701baf42a",
+      "status": "mismatch",
+      "updated_at": "2026-11-13T01:09:54.760295+00:00"
+    }
+  },
+  "provenance_edges": [
+    {
+      "created_at": "2026-11-13T01:09:54.743373+00:00",
+      "id": "edge_47c7efc64f85469085c5f6b0080ff6fe",
+      "operation_types": [
+        "media_trim",
+        "audio_gain"
+      ],
+      "output_asset_id": "asset_3b5fb4b420bd458d9e21f6180ce3637b",
+      "parent_asset_ids": [
+        "asset_3a8c7eca767849e28de52821320636f1"
+      ],
+      "plan_digest": "b9a0c82520196421d6ce3e4c2e7d08853b6a1edfaefe04bff9b2c8212dbe07ab",
+      "rendition_id": "rendition_cd4758d287f6425bbdb250957b8bd255"
+    }
+  ],
+  "renditions": {
+    "rendition_cd4758d287f6425bbdb250957b8bd255": {
+      "created_at": "2026-11-13T01:09:54.736157+00:00",
+      "error_code": null,
+      "error_message": null,
+      "id": "rendition_cd4758d287f6425bbdb250957b8bd255",
+      "operations": [
+        {
+          "duration_seconds": 0.06,
+          "start_seconds": 0.0,
+          "type": "media_trim"
+        },
+        {
+          "db": -3.0,
+          "type": "audio_gain"
+        }
+      ],
+      "output_asset_id": "asset_3b5fb4b420bd458d9e21f6180ce3637b",
+      "output_name": "derived.wav",
+      "plan_digest": "b9a0c82520196421d6ce3e4c2e7d08853b6a1edfaefe04bff9b2c8212dbe07ab",
+      "primary_asset_id": "asset_3a8c7eca767849e28de52821320636f1",
+      "secondary_asset_id": null,
+      "status": "completed",
+      "transitions": [
+        {
+          "at": "2026-11-13T01:09:54.736157+00:00",
+          "from": null,
+          "to": "queued"
+        },
+        {
+          "at": "2026-11-13T01:09:54.738513+00:00",
+          "from": "queued",
+          "to": "running"
+        },
+        {
+          "at": "2026-11-13T01:09:54.743477+00:00",
+          "from": "running",
+          "to": "completed"
+        }
+      ],
+      "updated_at": "2026-11-13T01:09:54.743477+00:00"
+    }
+  },
+  "schema_version": 1
+}

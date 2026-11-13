@@ -1,0 +1,21 @@
+{"status": "listening", "host": "127.0.0.1", "port": 34959, "data_dir": "/tmp/av-diag/runs/b-trunc-odd/data"}
+unexpected POST failure request_id=req_d4777384b3f948999e751c97959fb17b
+Traceback (most recent call last):
+  File "/workspace/avprovenance/http_api.py", line 178, in do_POST
+    result = self.application.verify_rendition(check_match.group(1))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/avprovenance/application.py", line 327, in verify_rendition
+    outcome = reproduce_output(
+              ^^^^^^^^^^^^^^^^^
+  File "/workspace/avprovenance/renditions/verifier.py", line 46, in reproduce_output
+    outcome = apply_media_operations(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/avprovenance/media/pipeline.py", line 38, in apply_media_operations
+    output = render_audio(primary_bytes, operations, secondary_bytes)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/avprovenance/media/audio_ops.py", line 114, in render_audio
+    clip = decode_wav(primary_bytes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/avprovenance/media/wav.py", line 103, in decode_wav
+    interleaved.frombytes(raw)
+ValueError: bytes length not a multiple of item size
